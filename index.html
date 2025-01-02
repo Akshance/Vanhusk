@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanhusk Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Sign-In API -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <meta name="google-signin-client_id" content="422322522973-i17n57otq2a0p47nmg3snpas0ecjn36j.apps.googleusercontent.com">
+</head>
+<body>
+  <header class="header">
+    <div class="logo" id="logo">Vanhusk</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" id="features-link">Features</a></li>
+        <li><a href="#" id="tools-link">Tools</a></li>
+        <li><a href="#" id="dashboard-link">Dashboard</a></li>
+        <li><a href="#" id="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="cta" id="get-started-btn">Get Started</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Vanhusk</h1>
+      <p>Defend, Detect, and Secure – Your Cybersecurity, Our Priority.</p>
+      <div class="button-container">
+        <a href="#tools-section" class="btn" id="explore-features-btn">Explore Features</a>
+        <div class="google-sign-in-button">
+          <!-- Google Sign-In button -->
+          <div id="g_id_onload"
+               data-client_id="422322522973-i17n57otq2a0p47nmg3snpas0ecjn36j.apps.googleusercontent.com"
+               data-context="signin"
+               data-ux_mode="popup"
+               data-callback="handleCredentialResponse"
+               data-itp_support="true">
+          </div>
+          <div class="g_id_signin"
+               data-type="standard"
+               data-shape="rectangular"
+               data-theme="outline"
+               data-text="signin_with"
+               data-size="large"
+               data-logo_alignment="left">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools-section" class="features">
+    <h2>Explore Our Tools</h2>
+    <div class="features-grid">
+      <div class="tool-card" id="phishing-simulator">
+        <h3>Phishing Simulator</h3>
+        <p>Test and improve your team’s awareness against phishing attacks.</p>
+        <a href="phishing-simulator.html" class="btn">Try Now</a>
+      </div>
+      <div class="tool-card" id="code-analyzer">
+        <h3>Code Analyzer</h3>
+        <p>Analyze and secure your code with AI-powered insights.</p>
+        <a href="code-analyzer.html" class="btn">Analyze Code</a>
+      </div>
+      <div class="tool-card" id="chatbot">
+        <h3>Chatbot</h3>
+        <p>Experience intelligent and secure conversations with our chatbot.</p>
+        <a href="chatbot.html" class="btn">Chat Now</a>
+      </div>
+      <div class="tool-card" id="website-scanner">
+        <h3>Website Scanner</h3>
+        <p>Scan your website for vulnerabilities and get actionable reports.</p>
+        <a href="website-scanner.html" class="btn">Scan Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vanhusk. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
