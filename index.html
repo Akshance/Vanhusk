@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanhusk Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Sign-In API -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+  <header class="header">
+    <div class="logo" id="logo">Vanhusk</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" id="features-link">Features</a></li>
+        <li><a href="#" id="tools-link">Tools</a></li>
+        <li><a href="#" id="dashboard-link">Dashboard</a></li>
+        <li><a href="#" id="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="cta" id="get-started-btn">Get Started</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Vanhusk</h1>
+      <p>Defend, Detect, and Secure – Your Cybersecurity, Our Priority.</p>
+      <a href="#" class="btn" id="explore-features-btn">Explore Features</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>AI-Powered Tools</h3>
+        <p>Utilize state-of-the-art AI for text, image, and code generation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Custom Dashboard</h3>
+        <p>Access all tools in one intuitive interface.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure & Reliable</h3>
+        <p>Your data is safe with our secure infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="google-signin">
+    <h2>Sign in with Google</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vanhusk. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
