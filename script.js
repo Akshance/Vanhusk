@@ -39,8 +39,10 @@ document.getElementById("explore-features-btn").addEventListener("click", () => 
 });
 
 // Ensure Google API is loaded before initializing the client
-gapi.load('auth2', function() {
+document.addEventListener('DOMContentLoaded', function() {
+  gapi.load('auth2', function() {
     gapi.auth2.init({
-        client_id: 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
+      client_id: 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
     });
+  });
 });

@@ -28,26 +28,7 @@
     <div class="hero-content">
       <h1>Welcome to Vanhusk</h1>
       <p>Defend, Detect, and Secure – Your Cybersecurity, Our Priority.</p>
-      <div class="button-container">
-        <a href="#tools-section" class="btn" id="explore-features-btn">Explore Features</a>
-        <div class="google-sign-in-box">
-          <div id="g_id_onload"
-               data-client_id="422322522973-i17n57otq2a0p47nmg3snpas0ecjn36j.apps.googleusercontent.com"
-               data-context="signin"
-               data-ux_mode="popup"
-               data-callback="handleCredentialResponse"
-               data-itp_support="true">
-          </div>
-          <div class="g_id_signin"
-               data-type="standard"
-               data-shape="rectangular"
-               data-theme="outline"
-               data-text="signin_with"
-               data-size="large"
-               data-logo_alignment="left">
-          </div>
-        </div>
-      </div>
+      <a href="#tools-section" class="btn" id="explore-features-btn">Explore Features</a>
     </div>
   </section>
 
@@ -75,6 +56,11 @@
         <a href="website-scanner.html" class="btn">Scan Now</a>
       </div>
     </div>
+  </section>
+
+  <section id="google-signin">
+    <h2>Sign in with Google</h2>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
   </section>
 
   <footer class="footer">
