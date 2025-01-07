@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Adjusted height to give more space */
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px; /* Increased padding for better appearance */
+    text-align: center;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between messages */
+}
+
+.chat-window .message {
+    padding: 12px 15px; /* Increased padding for readability */
+    border-radius: 10px;
+    max-width: 75%; /* Increased width limit for messages */
+    word-wrap: break-word; /* Ensures text wraps within the box */
+    font-size: 15px;
+}
+
+.chat-window .message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.chat-window .message.bot {
+    align-self: flex-start;
+    background-color: #e1e1e1;
+    color: #000;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    background: #fff;
+    align-items: center;
+    gap: 10px; /* Adds spacing between input box and button */
+}
+
+textarea {
+    flex: 1;
+    height: 50px; /* Increased height of input box */
+    padding: 12px 15px; /* More padding for a better feel */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none; /* Prevents resizing of the text area */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow inside the box */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adds focus glow */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+}

@@ -46,3 +46,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+const chatDisplay = document.getElementById('chat-display');
+
+function handleChat(event) {
+  if (event.key === 'Enter') {
+    sendMessage();
+  }
+}
+
+function sendMessage() {
+  const userInput = document.getElementById('user-input');
+  const userMessage = userInput.value;
+  if (userMessage.trim() === '') return;
+
+  // Display user message
+  const userMessageElem = document.createElement('div');
+  userMessageElem.className = 'user-message';
+  userMessageElem.textContent = userMessage;
+  chatDisplay.appendChild(userMessageElem);
+
+  // Simulate bot response
+  const botMessageElem = document.createElement('div');
+  botMessageElem.className = 'bot-message';
+  botMessageElem.textContent = "This is a simulated response.";
+  chatDisplay.appendChild(botMessageElem);
+
+  // Clear input
+  userInput.value = '';
+  chatDisplay.scrollTop = chatDisplay.scrollHeight;
+}
